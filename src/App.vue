@@ -21,9 +21,9 @@ export default {
     }
   },
   mounted() {
-    console.log(process.env.AuthKey);
+    console.log(process.env.VUE_APP_AuthKey);
     this.octokit = new Octokit({
-      auth: process.env.AuthKey
+      auth: process.env.VUE_APP_AuthKey
     })
     this.getMessages()
   },

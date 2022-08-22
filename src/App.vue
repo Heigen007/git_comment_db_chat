@@ -21,6 +21,7 @@ export default {
     }
   },
   mounted() {
+    console.log(process.env.AuthKey);
     this.octokit = new Octokit({
       auth: process.env.AuthKey
     })
